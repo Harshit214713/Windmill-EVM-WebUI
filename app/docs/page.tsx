@@ -400,7 +400,7 @@ WETH_ADDRESS=0xC02a...     # Chain-specific WETH address`}
                       <tr key={chain.chainId} className="border-t border-neutral-100 dark:border-neutral-800 hover:bg-neutral-50/50 dark:hover:bg-neutral-800/50">
                         <td className="p-3 font-semibold text-black dark:text-white">{chain.name}</td>
                         <td className="p-3 font-mono text-muted-foreground">{chain.chainId}</td>
-                        <td className="p-3 text-muted-foreground">{chain.chainId === 11155111 || chain.chainId === 63 ? 'Testnet' : 'Mainnet'}</td>
+                        <td className="p-3 text-muted-foreground">{chain.networkType}</td>
                         <td className="p-3 text-muted-foreground font-mono text-[10px] max-w-[200px] truncate">{chain.rpcUrl}</td>
                         <td className="p-3">
                           {chain.contractAddress ? (
